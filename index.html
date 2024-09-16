@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+    <title>Sandipan Roy</title>
+
+    <!--Enable sclaing for different screen sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Add metadata for search result optimization-->
+    <meta name="description" content="Sandipan Roy portfolio page.">
+    <meta name="keywords" content="Sandipan Roy, Sandipan, Sandipan Roy Wipro, developer Sandipan Roy,
+    SFDC Support engineer, Java developer, PHP Developer, .NET Developer, WinUI Developer, Sandipan Roy github, Sandipan Roy Whatsapp, Sandipan Roy Phone, Sandipan Roy linkedin, Java Developer, .NET Developer,
+    C# Developer">
+    <meta name="author" content="Sandipan Roy">
+
+
+    <!--Bootstrap 4 CDN imports-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!--Javascript for defining hover behaviour on navbar and footer (icons)-->
+    <script>
+        //NOTE : navbar is having icon with accent color, and footer is having all icons in default color
+        var accentColor = "rgba(63,204,197,0.9)";
+        var defaultColor = "white";
+        var navbarHilightColor = "#b0bab3";
+
+        /*Method to define navbar hover behaviour (On mouse over)*/
+        function navbarMouseOver(elementReference)
+        {
+            elementReference.style.color = navbarHilightColor;
+        }
+
+        /*Method to define navbar hover behaviour (On mouse out)*/
+        function navbarMouseOut(elementReference)
+        {
+            elementReference.style.color = defaultColor;
+        }
+
+
+
+        /*Method to define footer icons hover behaviour (On mouse over)*/
+        function footerIconMouseOver(elementReference)
+        {
+            elementReference.style.fill = accentColor;
+        }
+
+        /*Method to define footer icons hover behaviour (On mouse out)*/
+        function footerIconMouseOut(elementReference)
+        {
+            elementReference.style.fill = defaultColor;
+        }
+    </script>
+
+</head>
+
+<body class = "bg-dark text-white">
+    
+    <!--Display navigation bar-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-expand-xl sticky-top">
+
+        <a class="navbar-brand" href="#"><strong>Contents</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id = "navbarNavDropdown">
+            <ul class = "navbar-nav ml-auto">
+
+                <!--Technologies-->
+                <li class = "nav-item">
+                    <a class = "nav-link active" href = "index.html#technologies" onmouseover = "navbarMouseOver(this)" onmouseout = "navbarMouseOut(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(63,204,197,0.9)" class="bi bi-cpu" viewBox="0 0 16 16">
+                            <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                          </svg>
+                          Technologies
+                    </a>
+                </li>
+    
+                <!--Education-->
+                <li class = "nav-item">
+                    <a class = "nav-link active" href = "index.html#education" onmouseover = "navbarMouseOver(this)" onmouseout = "navbarMouseOut(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(63,204,197,0.9)" class="bi bi-briefcase" viewBox="0 0 16 16">
+                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg>
+                        Education
+                    </a>
+                </li>
+    
+    
+                 <!--Screenshots-->
+                 <li class = "nav-item">
+                    <a class = "nav-link active" href = "index.html#current_project_screenshots" onmouseover = "navbarMouseOver(this)" onmouseout = "navbarMouseOut(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(63,204,197,0.9)" class="bi bi-images" viewBox="0 0 16 16">
+                            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                            <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+                          </svg>
+                        Screenshots
+                    </a>
+                </li>
+    
+                <!--Experience-->
+                <li class = "nav-item">
+                    <a class = "nav-link active" href = "index.html#experience" onmouseover = "navbarMouseOver(this)" onmouseout = "navbarMouseOut(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(63,204,197,0.9)" class="bi bi-award" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg>
+                        Experience
+                    </a>
+                </li>
+    
+                <!--Contact-->
+                <li class = "nav-item">
+                    <a class = "nav-link active" href = "index.html#contact" onmouseover = "navbarMouseOver(this)" onmouseout = "navbarMouseOut(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(63,204,197,0.9)" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                          </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!--Container to hold about information-->
+    <div class = "container-fluid" style = "background-image: linear-gradient(to right,  rgba(255,0,0,0), rgba(63,204,197,0.5));">
+
+        <!--Display Profile picture-->
+        <div class = "row">
+            <div class = "col-md-6 d-flex justify-content-center">
+                <img src = "images/pic.jpeg" class = "rounded-circle mt-4 mb-4 img-fluid border border-light" alt = "Unable to load !" width = "50%">
+            </div>
+            
+            <!--Display Bio-->
+            <div class = "col-md-6 mt-4">
+                <h1>Sandipan Roy</h1>
+                <h5>Former Project Engineer at Wipro.</h5>
+                <p class = "mt-4">
+                    Hello, my name is Sandipan Roy. I'm passionate about developing <b>softwares, IoT products</b> (both software and hardware implementation). Programming is my passion as well as hobby. I love to learn new concepts and languages. 
+                    I would love to explore any of the career opportunities in any of the IT development domains.
+                </p>
+
+
+                <!--Option to download resume-->
+                <a href = "docs/Sandipan_CV_Detailed.pdf" target = "_blank">
+                <button class = "btn btn-success mt-4 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg>
+                    Resume</button>
+                </a>
+
+
+            </div>
+        </div>  
+        
+    </div>
+
+
+
+    <!--Container for known technologies-->
+    <div class = "container-fluid mt-5" id = "technologies">
+
+        <!--Technologies header-->
+        <div class = "row form-inline ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-cpu" viewBox="0 0 20 20">
+                <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              </svg>
+              <h3 class="ml-2">Technologies</h3>
+        </div>
+
+        <!--Container to display known technology name and logo (Row-1,md)-->
+        <div class = "row mt-2">
+            
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white" style="width: 8rem; height : 4rem;border: none;" >
+                <!--Logo for java-->
+                <img class="img-fluid mx-auto d-block" width = "40rem" src="logos/java.png" alt = "Unable to load !" />
+                <span class = "text-center">Java</span>
+            </div>
+
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white" style = "width: 8rem; height : 4rem;border: none;" >
+                <!--Logo for MySQL-->
+                <img class="img-fluid mx-auto d-block" width = "54rem" src="logos/mysql.png" alt = "Unable to load !">
+                <span class = "text-center">MySQL</span>
+            </div>
+
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white mt-2" style="width: 8rem; height : 4rem;border: none;" >
+                <!--Logo for Salesforce-->
+                <img class="img-fluid mx-auto d-block" width = "54rem"  src="logos/Salesforce.png" alt = "Unable to load !">
+                <span class = "text-center">Salesforce</span>
+            </div>
+
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white mt-2" style="width: 8rem; height : 4rem;border: none;" >
+                <!--Logo for WinUI-->
+                <img class="img-fluid mx-auto d-block" width = "54rem" src="logos/winui.png" alt = "Unable to load !">
+                <span class = "text-center">WinUI</span>
+            </div>
+
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white mt-2" style="width: 8rem; height : 4rem;border: none;">
+                <!--Logo for .NET-->
+                <img class="img-fluid mx-auto d-block" width = "54rem" src="logos/microsoft-net-logo.png" alt = "Unable to load !">
+                <span class = "text-center">.NET</span>
+            </div>
+
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white mt-2" style="width: 8rem; height : 4rem;border: none;">
+                <!--Logo for Bootstrap-->
+                <img class="img-fluid mx-auto d-block" width = "54rem" src="logos/Bootstrap_logo.webp" alt = "Unable to load !">
+                <span class = "text-center">Bootstrap</span>
+            </div>
+        </div>
+        
+        <!--Container to display known technology name and logo (Row-1,md)-->
+        <div class = "row mt-4">
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white" style="width: 8rem; height : 4rem;border: none;">
+                <img class="img-fluid mx-auto d-block" width = "54rem" src="logos/oracle.png" alt = "Unable to load !">
+                <span class = "text-center">Oracle SQL</span>
+            </div>
+
+	<div class = "col-md-2 card d-flex justify-content-center bg-dark text-white" style="width: 8rem; height : 4rem;border: none;">
+                <img class="img-fluid mx-auto d-block" width = "44rem" src="logos/Logo_C_sharp.png" alt = "Unable to load !">
+                <span class = "text-center">C#</span>
+            </div>
+
+            <div class = "col-md-2 card d-flex justify-content-center bg-dark text-white" style="width: 16rem; height : 4rem;border: none;">
+                <img class="img-fluid mx-auto d-block" width = "44rem" src="logos/php.png" alt = "Unable to load !">
+                <span class = "text-center">PHP</span>
+            </div>
+
+        </div>
+
+            
+
+                            
+    </div>
+        
+
+
+
+
+    <!--Container for Education details-->
+    <div class = "container-fluid mt-5" id = "education">
+        <!--Education header-->
+        <div class = "row form-inline ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-briefcase" viewBox="0 0 20 20">
+                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+              <h3 class="ml-2">Education</h3>
+        </div>
+
+        <div class = "row">
+            <h5 class = "ml-4 mr-5">Bachelor's Degree in Computer Science & Engineering</h5>
+            
+        </div>
+
+        <div class = "row">
+            <p class = "ml-4 mr-5">University of Engineering and Management, Kolkata (2016-2020).</p>
+        </div>
+    </div>
+
+
+
+
+    <!--Container for work experience-->
+    <div class = "container-fluid mt-5" id = "experience">
+        <!--Work experience header-->
+        <div class = "row form-inline ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-award" viewBox="0 0 16 16">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+              </svg>
+              <h3 class="ml-2">Work Experience</h3>
+        </div>
+        
+        <div class = "row">
+            <p class="ml-4 mr-5">  I was a SFDC CPQ L1 Support engineer at <strong>Wipro</strong>, was working for CISCO account. I have <strong>2.5 			years</strong> of experience in that domain. I was reponsible for handling user issues, resolve those if possible at L1 level, or inform
+it to next level, if some code changes were required, and finding the root cause analysis of the problem.</p>
+        </div>
+    </div>
+
+
+    <!--Container for Special Note-->
+    <div class = "container-fluid mt-5" id = "special_note">
+        <!--Education header-->
+        <div class = "row form-inline ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+              </svg>
+              <h3 class="ml-2">Special Note</h3>
+        </div>
+
+        <div class = "row">
+            <p class = "ml-4 mr-5">I don't have much <b>on paper</b> experience of development. But as I love to develop,
+            I keep on developing things by my own. You can refer to my <a  href = "https://github.com/SandipanRoy" target = "_blank">github</a> account to check my few projects. So, anyone looking for a candidate with some aspirations and good understanding of development
+        work, please feel free to contact me. I am ready to learn any new technologies if required. But if someone looking for candidate with on paper experience, please don't consider my profile,
+    as it will be a waste of time for both of us.</p>
+        </div>
+    </div>
+
+        <!--Container for Screenshots from current project-->
+        <div class = "container-fluid mt-5 overflow-auto" id = "current_project_screenshots">
+            <div class = "row form-inline ml-2" id = "images">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-images" viewBox="0 0 20 20">
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+                  </svg>
+                <h4 class="ml-2">Images from my own ongoing project</h4>
+            </div>
+                    <div class="row">
+                        <img src = "images/Project_img_1.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    <img src = "images/Project_img_2.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    </div>
+                    
+                    <div class="row">
+                        <img src = "images/Project_img_3.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    <img src = "images/Project_img_4.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    </div>
+
+                    <div class="row"></div>
+                        <img src = "images/Project_img_5.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    <img src = "images/Project_img_6.png" class = "mt-4 mb-4 mr-4 ml-4 img-fluid border border-light" alt = "Unable to load !" width = "44%">
+                    </div>
+                
+            
+        </div>
+
+
+    <!--Footer-->
+    <footer style = "background-color:  rgba(0,0,0,0.5)" id = "contact">
+
+        <div class = "container-fluid text-center">
+                <!-- Linkedin -->
+                <a  href = "https://www.linkedin.com/in/sandipan-roy-1977591ba/" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 mb-4" width="20" height="20" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>
+
+                <!-- Github -->
+                <a  href = "https://github.com/SandipanRoy" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 ml-2 mb-4" width="20" height="20" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                </a>
+
+                 <!-- Email -->
+                 <a  href = "mailto:sandipanroy177@gmail.com" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 ml-2 mb-4" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                      </svg>
+                </a>
+
+                 <!-- X -->
+                 <a  href = "https://x.com/Sandipan_Roy_" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 ml-2 mb-4" width="20" height="20" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  			<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 			13.028h1.36L4.323 2.145H2.865z"/>
+		    </svg>
+                </a>
+
+
+                <!-- Messenger -->
+                <a  href = "https://m.me/sandipan.roy.177" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 ml-2 mb-4" width="20" height="20" fill="white" class="bi bi-messenger" viewBox="0 0 16 16">
+                        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                      </svg>
+                </a>
+
+
+
+                <!-- Whatsapp -->
+                <a  href = "https://api.whatsapp.com/send?phone=+917001256552&text=Hi" target = "_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" onmouseover = "footerIconMouseOver(this)" onmouseout = "footerIconMouseOut(this)" class = "mt-4 ml-2 mb-4" width="20" height="20" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg>
+                </a>
+
+
+
+        </div>
+        
+
+        <!--Personal info and address-->
+        <div class = "container-fluid text-center row">
+            <div class = "col-xl-6 justify-content-center">
+                <!-- Telephone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      <p class = "ml-2 mt-3 text-secondary">+91 70012 56552</p>
+            </div>
+            
+            <div class = "col-xl-6 justify-content-center">
+                <!-- Address -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                    <p class = "ml-2 mt-3 text-secondary">Bauria, Howrah, West Bengal, India, PIN - 711310</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+
+</html>
